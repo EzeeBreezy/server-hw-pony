@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-
+app.use(express.static('public'))
 
 app.get('/pony', (req, res) => {
   res.sendFile(`${__dirname}/public/pony.html`)
